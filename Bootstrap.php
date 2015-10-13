@@ -41,14 +41,14 @@ class Shopware_Plugins_Frontend_SwagMediaSftp_Bootstrap extends Shopware_Compone
      */
     public function getInfo()
     {
-        return array(
-            'version' => $this->getVersion(),
-            'label' => $this->getLabel(),
-            'supplier' => 'shopware AG',
+        return [
+            'version'     => $this->getVersion(),
+            'label'       => $this->getLabel(),
+            'supplier'    => 'shopware AG',
             'description' => 'SFTP-Erweiterung für die Media Adapter',
-            'support' => 'Shopware Forum',
-            'link' => 'http://www.shopware.com'
-        );
+            'support'     => 'Shopware Forum',
+            'link'        => 'http://www.shopware.com',
+        ];
     }
 
     /**
