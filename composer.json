@@ -1,4 +1,11 @@
 {
+    "name": "shopwarelabs/swag-media-sftp",
+    "type": "shopware-frontend-plugin",
+    "description": "The SFTP adapter allows you to manage your media files in shopware on a SFTP environment.",
+    "license": "MIT",
+    "extra": {
+        "installer-name": "SwagMediaSftp"
+    },
     "require": {
         "league/flysystem-sftp": "^1.0"
     }
