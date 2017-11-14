@@ -3,8 +3,11 @@ namespace SwagMediaSftp\Subscriber;
 
 use Enlight\Event\SubscriberInterface;
 use Enlight_Event_EventArgs;
+
 use League\Flysystem\AdapterInterface;
 use League\Flysystem\Sftp\SftpAdapter;
+
+require __DIR__ . "/../vendor/autoload.php";
 
 class AdapterCollectionSubscriber implements SubscriberInterface {
 
