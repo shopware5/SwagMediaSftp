@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.2/engine/Shopware/Components/Plugin/schema/plugin.xsd">
+
+    <version>1.0.0</version>
+    <author>shopware AG</author>
+    <license>MIT</license>
+
+    <label lang="de">Media Adapter: SFTP</label>
+    <label lang="en">Media adapter: SFTP</label>
+
+    <description lang="de">SFTP-Erweiterung für die Media Adapter</description>
+    <description lang="en">SFTP-Extension for the Shopware media adapters</description>
+
+    <compatibility minVersion="5.2.0" />
+
+</plugin>
