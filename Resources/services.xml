@@ -6,8 +6,7 @@
 
     <services>
         <service id="swag_media_sftp.subscriber.adapter_collection_subscriber" class="SwagMediaSftp\Subscriber\AdapterCollectionSubscriber">
-            <tag name="shopware.event_subscriber" />
+            <tag name="shopware.event_subscriber"/>
         </service>
     </services>
-
 </container>

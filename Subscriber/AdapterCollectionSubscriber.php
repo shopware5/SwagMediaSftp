@@ -1,4 +1,5 @@
 <?php
+
 namespace SwagMediaSftp\Subscriber;
 
 use Enlight\Event\SubscriberInterface;
@@ -7,10 +8,16 @@ use Enlight_Event_EventArgs;
 use League\Flysystem\AdapterInterface;
 use League\Flysystem\Sftp\SftpAdapter;
 
-require __DIR__ . "/../vendor/autoload.php";
+if (file_exists(__DIR__ . '/vendor/autoload.php')) {
+    require_once __DIR__ . '/vendor/autoload.php';
+}
 
-class AdapterCollectionSubscriber implements SubscriberInterface {
+class AdapterCollectionSubscriber implements SubscriberInterface
+{
 
+    /**
+     * {@inheritdoc}
+     */
     public static function getSubscribedEvents()
     {
         return [
@@ -48,5 +55,4 @@ class AdapterCollectionSubscriber implements SubscriberInterface {
             'timeout' => $config['timeout']
         ]);
     }
-
 }

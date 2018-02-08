@@ -11,4 +11,6 @@ namespace SwagMediaSftp;
 
 use Shopware\Components\Plugin;
 
-class SwagMediaSftp extends Plugin {}
+class SwagMediaSftp extends Plugin
+{
+}
