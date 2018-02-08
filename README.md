@@ -4,6 +4,10 @@
 
 The SFTP adapter allows you to manage your media files in shopware on a SFTP environment.
 
+## Building a package
+
+Just run `./build.sh`.
+
 ## Install
 
 Download the plugin from the release page and enable it in shopware.
