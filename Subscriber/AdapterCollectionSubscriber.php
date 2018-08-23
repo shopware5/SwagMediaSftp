@@ -45,14 +45,6 @@ class AdapterCollectionSubscriber implements SubscriberInterface
 
         $config = array_merge($defaultConfig, $args->get('config'));
 
-        return new SftpAdapter([
-            'host' => $config['host'],
-            'port' => $config['port'],
-            'username' => $config['username'],
-            'password' => $config['password'],
-            'privateKey' => $config['privateKey'],
-            'root' => $config['root'],
-            'timeout' => $config['timeout']
-        ]);
+        return new SftpAdapter($config);
     }
 }
