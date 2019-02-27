@@ -4,24 +4,18 @@ namespace SwagMediaSftp\Subscriber;
 
 use Enlight\Event\SubscriberInterface;
 use Enlight_Event_EventArgs;
-
 use League\Flysystem\AdapterInterface;
 use League\Flysystem\Sftp\SftpAdapter;
 
-if (file_exists(__DIR__ . '/vendor/autoload.php')) {
-    require_once __DIR__ . '/vendor/autoload.php';
-}
-
 class AdapterCollectionSubscriber implements SubscriberInterface
 {
-
     /**
      * {@inheritdoc}
      */
     public static function getSubscribedEvents()
     {
         return [
-            'Shopware_Collect_MediaAdapter_sftp' => 'createSftpAdapter'
+            'Shopware_Collect_MediaAdapter_sftp' => 'createSftpAdapter',
         ];
     }
 
