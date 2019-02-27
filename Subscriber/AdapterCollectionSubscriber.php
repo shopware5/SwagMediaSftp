@@ -1,4 +1,10 @@
 <?php
+/**
+ * (c) shopware AG <info@shopware.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
 namespace SwagMediaSftp\Subscriber;
 
@@ -23,6 +29,7 @@ class AdapterCollectionSubscriber implements SubscriberInterface
      * Creates adapter instance
      *
      * @param Enlight_Event_EventArgs $args
+     *
      * @return AdapterInterface
      */
     public function createSftpAdapter(Enlight_Event_EventArgs $args)
@@ -34,7 +41,7 @@ class AdapterCollectionSubscriber implements SubscriberInterface
             'password' => '',
             'privateKey' => '',
             'root' => '',
-            'timeout' => 10
+            'timeout' => 10,
         ];
 
         $config = array_merge($defaultConfig, $args->get('config'));
